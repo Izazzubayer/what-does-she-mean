@@ -1,0 +1,58 @@
+================================
+VIBE CHECK - SETUP INSTRUCTIONS
+================================
+
+✅ STEP 1: Get Your Hugging Face API Key
+----------------------------------------
+1. Visit: https://huggingface.co/settings/tokens
+2. Sign up if you don't have an account (it's free!)
+3. Click "New token"
+4. Name it: "vibe-check-app"
+5. Select "Read" permission
+6. Copy the token (starts with "hf_")
+
+✅ STEP 2: Create Environment File
+----------------------------------
+In your terminal, run:
+
+cd ~/what-does-she-mean
+echo 'HUGGINGFACE_API_KEY=your_token_here' > .env.local
+
+Replace 'your_token_here' with your actual Hugging Face token!
+
+✅ STEP 3: Install & Run
+------------------------
+npm install
+npm run dev
+
+Then open: http://localhost:3000
+
+✅ STEP 4: Try It Out!
+----------------------
+Type a message like:
+- "I'm fine"
+- "We need to talk"
+- "k"
+
+Choose a tone (Chill, Warm, Flirty, Serious)
+Click "Decode Message"
+
+🎯 PORTFOLIO TIP
+----------------
+For your case study, capture:
+1. Before/after screenshots
+2. User testing feedback (5-8 people)
+3. Metrics: time-to-reply, edit rate, trust rating
+4. Iterations you made based on feedback
+
+🚀 DEPLOY TO VERCEL
+-------------------
+1. Push to GitHub
+2. Import to Vercel
+3. Add HUGGINGFACE_API_KEY in settings
+4. Deploy!
+
+💡 NEED HELP?
+-------------
+Check ENV_SETUP.md for detailed troubleshooting
+
